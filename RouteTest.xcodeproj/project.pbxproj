@@ -3,19 +3,56 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86E6C27E8956DB1828E56213 /* Pods_RouteTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9935AD939A370D7436FCEE9D /* Pods_RouteTest.framework */; };
+		A7324D5A257D3BB800C02ACE /* MatrixExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7324D59257D3BB800C02ACE /* MatrixExtensions.swift */; };
 		A74AE0D62566B1FA00DF23F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AE0D52566B1FA00DF23F2 /* AppDelegate.swift */; };
 		A74AE0D82566B1FA00DF23F2 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A74AE0D72566B1FA00DF23F2 /* art.scnassets */; };
 		A74AE0DA2566B1FA00DF23F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AE0D92566B1FA00DF23F2 /* ViewController.swift */; };
 		A74AE0DD2566B1FA00DF23F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74AE0DB2566B1FA00DF23F2 /* Main.storyboard */; };
 		A74AE0DF2566B1FE00DF23F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74AE0DE2566B1FE00DF23F2 /* Assets.xcassets */; };
 		A74AE0E22566B1FE00DF23F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74AE0E02566B1FE00DF23F2 /* LaunchScreen.storyboard */; };
+		A74AE0EB2566B24100DF23F2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AE0EA2566B24100DF23F2 /* MapViewController.swift */; };
+		A74AE0EE2566DD5F00DF23F2 /* LocationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AE0ED2566DD5E00DF23F2 /* LocationEngine.swift */; };
+		A76199F7257FA1260033769D /* GeometryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76199F6257FA1260033769D /* GeometryExtensions.swift */; };
+		A76199F9257FC6660033769D /* RouteMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76199F8257FC6660033769D /* RouteMatcher.swift */; };
+		A76199FB257FC81B0033769D /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76199FA257FC81B0033769D /* Segment.swift */; };
+		A76199FD257FEE830033769D /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76199FC257FEE830033769D /* Angle.swift */; };
+		A76199FF258550580033769D /* ARPositionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76199FE258550570033769D /* ARPositionEngine.swift */; };
+		A7619A01258CB3300033769D /* GPSSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7619A00258CB3300033769D /* GPSSimulator.swift */; };
+		A7619A04258E415B0033769D /* Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A7619A03258E415A0033769D /* Arrow.png */; };
+		A7619A06258E44A70033769D /* Arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = A7619A05258E44A70033769D /* Arrow2.png */; };
+		A7619A21259F48040033769D /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A7619A1E259F48010033769D /* DeepLabV3.mlmodel */; };
+		A7619A22259F48040033769D /* FCRNFP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A7619A1F259F48010033769D /* FCRNFP16.mlmodel */; };
+		A7619A23259F48040033769D /* DeepLabV3FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A7619A20259F48010033769D /* DeepLabV3FP16.mlmodel */; };
+		A7619A25259F483A0033769D /* MLModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7619A24259F483A0033769D /* MLModule.swift */; };
+		A7619A2725A141070033769D /* HED_so.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A7619A2625A141060033769D /* HED_so.mlmodel */; };
+		A76E4ACC25BB78A9003638A6 /* CLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E4ACB25BB78A9003638A6 /* CLocation.swift */; };
+		A770B37A25714F0600B54304 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770B37925714F0600B54304 /* UIKitExtensions.swift */; };
+		A770B37C257666BE00B54304 /* SensorsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770B37B257666BE00B54304 /* SensorsEngine.swift */; };
+		A770B37E2576694000B54304 /* PositionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770B37D2576694000B54304 /* PositionData.swift */; };
+		A770B3A02576C3CA00B54304 /* PositioningEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770B39F2576C3CA00B54304 /* PositioningEngine.swift */; };
+		A770B3A225783BDA00B54304 /* GISRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770B3A125783BDA00B54304 /* GISRoute.swift */; };
+		A770B3A4257840F100B54304 /* LocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770B3A3257840F100B54304 /* LocationExtensions.swift */; };
+		A770B3A7257A8B9B00B54304 /* RouteGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770B3A6257A8B9B00B54304 /* RouteGeometry.swift */; };
+		A770B3A9257BBB7A00B54304 /* GISToLocalConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770B3A8257BBB7A00B54304 /* GISToLocalConverter.swift */; };
+		A770B3AC257BC4C400B54304 /* AppEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770B3AB257BC4C400B54304 /* AppEngine.swift */; };
+		A770B3B0257BE41500B54304 /* GraphicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770B3AF257BE41500B54304 /* GraphicsViewController.swift */; };
+		A7BF595D25C4D4C200D1DE38 /* surface.shader in Resources */ = {isa = PBXBuildFile; fileRef = A7BF595C25C4D4C200D1DE38 /* surface.shader */; };
+		A7BF595F25C4F18000D1DE38 /* geo.shader in Resources */ = {isa = PBXBuildFile; fileRef = A7BF595E25C4F18000D1DE38 /* geo.shader */; };
+		A7CDFE5A2569538B00D2F81D /* OpenCVAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7CDFE582569538B00D2F81D /* OpenCVAPI.cpp */; };
+		A7CDFE5C2569574800D2F81D /* OpenCV-ObjC-Adaptor.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7CDFE5B2569574800D2F81D /* OpenCV-ObjC-Adaptor.mm */; };
+		A7CDFE6025695EC200D2F81D /* ARKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDFE5F25695EC200D2F81D /* ARKitViewController.swift */; };
+		A7CDFE6225697E0300D2F81D /* ARKitEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDFE6125697E0300D2F81D /* ARKitEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		792E2CC52D7D857A13B8FD68 /* Pods-RouteTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteTest.release.xcconfig"; path = "Target Support Files/Pods-RouteTest/Pods-RouteTest.release.xcconfig"; sourceTree = "<group>"; };
+		9935AD939A370D7436FCEE9D /* Pods_RouteTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouteTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7324D59257D3BB800C02ACE /* MatrixExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixExtensions.swift; sourceTree = "<group>"; };
 		A74AE0D22566B1FA00DF23F2 /* RouteTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74AE0D52566B1FA00DF23F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A74AE0D72566B1FA00DF23F2 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -24,6 +61,42 @@
 		A74AE0DE2566B1FE00DF23F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A74AE0E12566B1FE00DF23F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A74AE0E32566B1FE00DF23F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A74AE0EA2566B24100DF23F2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A74AE0ED2566DD5E00DF23F2 /* LocationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEngine.swift; sourceTree = "<group>"; };
+		A76199F6257FA1260033769D /* GeometryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryExtensions.swift; sourceTree = "<group>"; };
+		A76199F8257FC6660033769D /* RouteMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMatcher.swift; sourceTree = "<group>"; };
+		A76199FA257FC81B0033769D /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		A76199FC257FEE830033769D /* Angle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
+		A76199FE258550570033769D /* ARPositionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPositionEngine.swift; sourceTree = "<group>"; };
+		A7619A00258CB3300033769D /* GPSSimulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSSimulator.swift; sourceTree = "<group>"; };
+		A7619A03258E415A0033769D /* Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow.png; sourceTree = "<group>"; };
+		A7619A05258E44A70033769D /* Arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow2.png; sourceTree = "<group>"; };
+		A7619A1E259F48010033769D /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3.mlmodel; sourceTree = "<group>"; };
+		A7619A1F259F48010033769D /* FCRNFP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FCRNFP16.mlmodel; sourceTree = "<group>"; };
+		A7619A20259F48010033769D /* DeepLabV3FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3FP16.mlmodel; sourceTree = "<group>"; };
+		A7619A24259F483A0033769D /* MLModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLModule.swift; sourceTree = "<group>"; };
+		A7619A2625A141060033769D /* HED_so.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HED_so.mlmodel; sourceTree = "<group>"; };
+		A76E4ACB25BB78A9003638A6 /* CLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLocation.swift; sourceTree = "<group>"; };
+		A770B37925714F0600B54304 /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		A770B37B257666BE00B54304 /* SensorsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsEngine.swift; sourceTree = "<group>"; };
+		A770B37D2576694000B54304 /* PositionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionData.swift; sourceTree = "<group>"; };
+		A770B39F2576C3CA00B54304 /* PositioningEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositioningEngine.swift; sourceTree = "<group>"; };
+		A770B3A125783BDA00B54304 /* GISRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GISRoute.swift; sourceTree = "<group>"; };
+		A770B3A3257840F100B54304 /* LocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationExtensions.swift; sourceTree = "<group>"; };
+		A770B3A6257A8B9B00B54304 /* RouteGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteGeometry.swift; sourceTree = "<group>"; };
+		A770B3A8257BBB7A00B54304 /* GISToLocalConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GISToLocalConverter.swift; sourceTree = "<group>"; };
+		A770B3AB257BC4C400B54304 /* AppEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEngine.swift; sourceTree = "<group>"; };
+		A770B3AF257BE41500B54304 /* GraphicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsViewController.swift; sourceTree = "<group>"; };
+		A7BF595C25C4D4C200D1DE38 /* surface.shader */ = {isa = PBXFileReference; lastKnownFileType = text; path = surface.shader; sourceTree = "<group>"; };
+		A7BF595E25C4F18000D1DE38 /* geo.shader */ = {isa = PBXFileReference; lastKnownFileType = text; path = geo.shader; sourceTree = "<group>"; };
+		A7CDFE572569538B00D2F81D /* RouteTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RouteTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		A7CDFE582569538B00D2F81D /* OpenCVAPI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenCVAPI.cpp; sourceTree = "<group>"; };
+		A7CDFE592569538B00D2F81D /* OpenCVAPI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenCVAPI.hpp; sourceTree = "<group>"; };
+		A7CDFE5B2569574800D2F81D /* OpenCV-ObjC-Adaptor.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "OpenCV-ObjC-Adaptor.mm"; sourceTree = "<group>"; };
+		A7CDFE5D2569578F00D2F81D /* OpenCV-ObjC-Adaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCV-ObjC-Adaptor.h"; sourceTree = "<group>"; };
+		A7CDFE5F25695EC200D2F81D /* ARKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitViewController.swift; sourceTree = "<group>"; };
+		A7CDFE6125697E0300D2F81D /* ARKitEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitEngine.swift; sourceTree = "<group>"; };
+		FFE7C73512DB4F4CD50B3F2D /* Pods-RouteTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteTest.debug.xcconfig"; path = "Target Support Files/Pods-RouteTest/Pods-RouteTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E6C27E8956DB1828E56213 /* Pods_RouteTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +116,8 @@
 			children = (
 				A74AE0D42566B1FA00DF23F2 /* RouteTest */,
 				A74AE0D32566B1FA00DF23F2 /* Products */,
+				B8F79C8149156708EF029520 /* Pods */,
+				E96473CF5FF146ABD4A625F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +132,15 @@
 		A74AE0D42566B1FA00DF23F2 /* RouteTest */ = {
 			isa = PBXGroup;
 			children = (
+				A7619A1D259F47C50033769D /* ML */,
+				A7619A02258E412B0033769D /* Resources */,
+				A770B37825714ED300B54304 /* BaseExtenstions */,
+				A770B3AA257BC46C00B54304 /* AppModule */,
+				A770B3A5257A8B7D00B54304 /* GraphicModule */,
+				A7CDFE5E25695EA100D2F81D /* ARKitModule */,
+				A7CDFE562569532500D2F81D /* CVModule */,
+				A74AE0EC2566DD3F00DF23F2 /* PositioningModule */,
+				A74AE0E92566B22000DF23F2 /* MapModule */,
 				A74AE0D52566B1FA00DF23F2 /* AppDelegate.swift */,
 				A74AE0D72566B1FA00DF23F2 /* art.scnassets */,
 				A74AE0D92566B1FA00DF23F2 /* ViewController.swift */,
@@ -67,6 +152,122 @@
 			path = RouteTest;
 			sourceTree = "<group>";
 		};
+		A74AE0E92566B22000DF23F2 /* MapModule */ = {
+			isa = PBXGroup;
+			children = (
+				A74AE0EA2566B24100DF23F2 /* MapViewController.swift */,
+				A770B3A125783BDA00B54304 /* GISRoute.swift */,
+				A770B3A8257BBB7A00B54304 /* GISToLocalConverter.swift */,
+				A76E4ACB25BB78A9003638A6 /* CLocation.swift */,
+			);
+			path = MapModule;
+			sourceTree = "<group>";
+		};
+		A74AE0EC2566DD3F00DF23F2 /* PositioningModule */ = {
+			isa = PBXGroup;
+			children = (
+				A74AE0ED2566DD5E00DF23F2 /* LocationEngine.swift */,
+				A770B37B257666BE00B54304 /* SensorsEngine.swift */,
+				A770B37D2576694000B54304 /* PositionData.swift */,
+				A770B39F2576C3CA00B54304 /* PositioningEngine.swift */,
+				A76199F8257FC6660033769D /* RouteMatcher.swift */,
+				A76199FA257FC81B0033769D /* Segment.swift */,
+				A76199FC257FEE830033769D /* Angle.swift */,
+				A76199FE258550570033769D /* ARPositionEngine.swift */,
+				A7619A00258CB3300033769D /* GPSSimulator.swift */,
+			);
+			path = PositioningModule;
+			sourceTree = "<group>";
+		};
+		A7619A02258E412B0033769D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A7619A05258E44A70033769D /* Arrow2.png */,
+				A7619A03258E415A0033769D /* Arrow.png */,
+				A7BF595C25C4D4C200D1DE38 /* surface.shader */,
+				A7BF595E25C4F18000D1DE38 /* geo.shader */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A7619A1D259F47C50033769D /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				A7619A2625A141060033769D /* HED_so.mlmodel */,
+				A7619A1E259F48010033769D /* DeepLabV3.mlmodel */,
+				A7619A20259F48010033769D /* DeepLabV3FP16.mlmodel */,
+				A7619A1F259F48010033769D /* FCRNFP16.mlmodel */,
+				A7619A24259F483A0033769D /* MLModule.swift */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		A770B37825714ED300B54304 /* BaseExtenstions */ = {
+			isa = PBXGroup;
+			children = (
+				A770B37925714F0600B54304 /* UIKitExtensions.swift */,
+				A770B3A3257840F100B54304 /* LocationExtensions.swift */,
+				A7324D59257D3BB800C02ACE /* MatrixExtensions.swift */,
+				A76199F6257FA1260033769D /* GeometryExtensions.swift */,
+			);
+			path = BaseExtenstions;
+			sourceTree = "<group>";
+		};
+		A770B3A5257A8B7D00B54304 /* GraphicModule */ = {
+			isa = PBXGroup;
+			children = (
+				A770B3A6257A8B9B00B54304 /* RouteGeometry.swift */,
+				A770B3AF257BE41500B54304 /* GraphicsViewController.swift */,
+			);
+			path = GraphicModule;
+			sourceTree = "<group>";
+		};
+		A770B3AA257BC46C00B54304 /* AppModule */ = {
+			isa = PBXGroup;
+			children = (
+				A770B3AB257BC4C400B54304 /* AppEngine.swift */,
+			);
+			path = AppModule;
+			sourceTree = "<group>";
+		};
+		A7CDFE562569532500D2F81D /* CVModule */ = {
+			isa = PBXGroup;
+			children = (
+				A7CDFE582569538B00D2F81D /* OpenCVAPI.cpp */,
+				A7CDFE592569538B00D2F81D /* OpenCVAPI.hpp */,
+				A7CDFE572569538B00D2F81D /* RouteTest-Bridging-Header.h */,
+				A7CDFE5B2569574800D2F81D /* OpenCV-ObjC-Adaptor.mm */,
+				A7CDFE5D2569578F00D2F81D /* OpenCV-ObjC-Adaptor.h */,
+			);
+			path = CVModule;
+			sourceTree = "<group>";
+		};
+		A7CDFE5E25695EA100D2F81D /* ARKitModule */ = {
+			isa = PBXGroup;
+			children = (
+				A7CDFE5F25695EC200D2F81D /* ARKitViewController.swift */,
+				A7CDFE6125697E0300D2F81D /* ARKitEngine.swift */,
+			);
+			path = ARKitModule;
+			sourceTree = "<group>";
+		};
+		B8F79C8149156708EF029520 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFE7C73512DB4F4CD50B3F2D /* Pods-RouteTest.debug.xcconfig */,
+				792E2CC52D7D857A13B8FD68 /* Pods-RouteTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E96473CF5FF146ABD4A625F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9935AD939A370D7436FCEE9D /* Pods_RouteTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +275,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A74AE0E62566B1FE00DF23F2 /* Build configuration list for PBXNativeTarget "RouteTest" */;
 			buildPhases = (
+				68F1FCECA24AF1903D1F9E4E /* [CP] Check Pods Manifest.lock */,
 				A74AE0CE2566B1FA00DF23F2 /* Sources */,
 				A74AE0CF2566B1FA00DF23F2 /* Frameworks */,
 				A74AE0D02566B1FA00DF23F2 /* Resources */,
+				7D083D57AB5E35386F75A4BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +302,7 @@
 				TargetAttributes = {
 					A74AE0D12566B1FA00DF23F2 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -125,22 +329,97 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7BF595F25C4F18000D1DE38 /* geo.shader in Resources */,
+				A7619A04258E415B0033769D /* Arrow.png in Resources */,
 				A74AE0D82566B1FA00DF23F2 /* art.scnassets in Resources */,
 				A74AE0E22566B1FE00DF23F2 /* LaunchScreen.storyboard in Resources */,
 				A74AE0DF2566B1FE00DF23F2 /* Assets.xcassets in Resources */,
+				A7619A06258E44A70033769D /* Arrow2.png in Resources */,
 				A74AE0DD2566B1FA00DF23F2 /* Main.storyboard in Resources */,
+				A7BF595D25C4D4C200D1DE38 /* surface.shader in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68F1FCECA24AF1903D1F9E4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RouteTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D083D57AB5E35386F75A4BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RouteTest/Pods-RouteTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RouteTest/Pods-RouteTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RouteTest/Pods-RouteTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A74AE0CE2566B1FA00DF23F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7619A25259F483A0033769D /* MLModule.swift in Sources */,
+				A74AE0EE2566DD5F00DF23F2 /* LocationEngine.swift in Sources */,
+				A7619A2725A141070033769D /* HED_so.mlmodel in Sources */,
+				A7CDFE5A2569538B00D2F81D /* OpenCVAPI.cpp in Sources */,
+				A770B37A25714F0600B54304 /* UIKitExtensions.swift in Sources */,
+				A770B3A02576C3CA00B54304 /* PositioningEngine.swift in Sources */,
+				A770B3A225783BDA00B54304 /* GISRoute.swift in Sources */,
+				A76199FB257FC81B0033769D /* Segment.swift in Sources */,
+				A770B3B0257BE41500B54304 /* GraphicsViewController.swift in Sources */,
+				A770B3AC257BC4C400B54304 /* AppEngine.swift in Sources */,
+				A7324D5A257D3BB800C02ACE /* MatrixExtensions.swift in Sources */,
 				A74AE0DA2566B1FA00DF23F2 /* ViewController.swift in Sources */,
+				A770B3A7257A8B9B00B54304 /* RouteGeometry.swift in Sources */,
+				A74AE0EB2566B24100DF23F2 /* MapViewController.swift in Sources */,
+				A76199F7257FA1260033769D /* GeometryExtensions.swift in Sources */,
+				A770B37C257666BE00B54304 /* SensorsEngine.swift in Sources */,
+				A770B3A4257840F100B54304 /* LocationExtensions.swift in Sources */,
+				A7CDFE6025695EC200D2F81D /* ARKitViewController.swift in Sources */,
+				A7CDFE6225697E0300D2F81D /* ARKitEngine.swift in Sources */,
+				A770B37E2576694000B54304 /* PositionData.swift in Sources */,
+				A770B3A9257BBB7A00B54304 /* GISToLocalConverter.swift in Sources */,
+				A7619A21259F48040033769D /* DeepLabV3.mlmodel in Sources */,
+				A7619A23259F48040033769D /* DeepLabV3FP16.mlmodel in Sources */,
+				A7CDFE5C2569574800D2F81D /* OpenCV-ObjC-Adaptor.mm in Sources */,
+				A76E4ACC25BB78A9003638A6 /* CLocation.swift in Sources */,
+				A76199FD257FEE830033769D /* Angle.swift in Sources */,
+				A76199F9257FC6660033769D /* RouteMatcher.swift in Sources */,
+				A7619A22259F48040033769D /* FCRNFP16.mlmodel in Sources */,
 				A74AE0D62566B1FA00DF23F2 /* AppDelegate.swift in Sources */,
+				A76199FF258550580033769D /* ARPositionEngine.swift in Sources */,
+				A7619A01258CB3300033769D /* GPSSimulator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,8 +561,10 @@
 		};
 		A74AE0E72566B1FE00DF23F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFE7C73512DB4F4CD50B3F2D /* Pods-RouteTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5T7GACRHM;
 				INFOPLIST_FILE = RouteTest/Info.plist;
@@ -293,6 +574,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.omk.RouteTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RouteTest/CVModule/RouteTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +583,10 @@
 		};
 		A74AE0E82566B1FE00DF23F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792E2CC52D7D857A13B8FD68 /* Pods-RouteTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5T7GACRHM;
 				INFOPLIST_FILE = RouteTest/Info.plist;
@@ -311,6 +596,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.omk.RouteTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RouteTest/CVModule/RouteTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

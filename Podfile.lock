@@ -1,0 +1,24 @@
+PODS:
+  - GoogleMaps (4.1.0):
+    - GoogleMaps/Maps (= 4.1.0)
+  - GoogleMaps/Base (4.1.0)
+  - GoogleMaps/Maps (4.1.0):
+    - GoogleMaps/Base
+  - OpenCV2-contrib (3.2.0.1)
+
+DEPENDENCIES:
+  - GoogleMaps (= 4.1.0)
+  - OpenCV2-contrib
+
+SPEC REPOS:
+  trunk:
+    - GoogleMaps
+    - OpenCV2-contrib
+
+SPEC CHECKSUMS:
+  GoogleMaps: 008e2c80e38605b56b560e8deb73d4194ff30bef
+  OpenCV2-contrib: 314f0aa0159767a4b2e4208a35d646542bc15da6
+
+PODFILE CHECKSUM: efe6369b4f437efb70c84a54901297164642e17f
+
+COCOAPODS: 1.9.3
