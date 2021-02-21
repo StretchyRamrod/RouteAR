@@ -69,7 +69,7 @@ class GraphicsViewController: UIViewController {
         finishGeo.materials = [finishMat]
         let finishNode = SCNNode(geometry: finishGeo)
         
-        finishNode.transform = SCNMatrix4(float4x4.init(rotMat: float3x3.identity, translation: GISToLocalConverter.shared.convert(gisRoute.last)))
+        finishNode.transform = SCNMatrix4(float4x4.init(rotMat: float3x3.identity, translation: GISToLocalConverter.shared.convert(gisRoute.last!)))
         
         worldNode.addChildNode(finishNode)
         
