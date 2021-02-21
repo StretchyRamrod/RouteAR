@@ -62,6 +62,17 @@ class GraphicsViewController: UIViewController {
         routeNode.localTranslate(by: SCNVector3(0, -0.5, 0))
         worldNode.addChildNode(routeNode)
         
+        let finishGeo = SCNBox(width: 1.0, height: 1.0, length: 1.0, chamferRadius: 0.1)
+        let finishMat = SCNMaterial()
+        finishMat.isDoubleSided = false
+        finishMat.diffuse.contents = UIImage(named: "checkered.png")
+        finishGeo.materials = [finishMat]
+        let finishNode = SCNNode(geometry: finishGeo)
+        
+        finishNode.transform = SCNMatrix4(float4x4.init(rotMat: float3x3.identity, translation: GISToLocalConverter.shared.convert(gisRoute.last)))
+        
+        worldNode.addChildNode(finishNode)
+        
     }
     
     
